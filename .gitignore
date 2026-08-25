@@ -1,0 +1,47 @@
+# GateData Agent — git ignore
+
+# --- Secrets & local MCP config (never commit) ---
+.env
+.env.*
+!.env.example
+*.pem
+*.p8
+**/mcp.json
+**/.cursor/mcp.json
+.gatedata/
+config.local.yaml
+
+# Install script backups (if copied into repo during testing)
+*.bak.*
+mcp.json.bak.*
+
+# --- Node ---
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# --- Temp & cache ---
+tmp/
+temp/
+.cache/
+*.tmp
+*.swp
+*.swo
+*~
+
+# --- Logs ---
+*.log
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# --- IDE ---
+.idea/
+.vscode/
+*.iml
+
+# --- Local test / scratch ---
+test-output/
+scratch/

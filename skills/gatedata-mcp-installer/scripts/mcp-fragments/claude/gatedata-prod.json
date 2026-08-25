@@ -1,0 +1,11 @@
+{
+  "GateData": {
+    "url": "https://mcp.gatedata.ai/mcp",
+    "transport": "streamable-http",
+    "timeout": 60,
+    "headers": {
+      "Accept": "application/json, text/event-stream",
+      "Authorization": "Bearer __REPLACE_ME__"
+    }
+  }
+}

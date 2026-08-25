@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: GateData product docs
+    url: https://gatedata.ai/docs
+    about: API / MCP capability documentation
+  - name: Security report
+    url: https://github.com/gate/gate-data-ai-agent/blob/main/SECURITY.md
+    about: How to report vulnerabilities (do not post secrets in issues)

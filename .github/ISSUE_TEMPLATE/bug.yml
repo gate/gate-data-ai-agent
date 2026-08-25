@@ -1,0 +1,32 @@
+---
+name: Bug report
+description: Unexpected behavior in skills or scripts
+title: "[bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do **not** paste live API keys or credentials.
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+    validations:
+      required: true
+  - type: textarea
+    id: version
+    attributes:
+      label: Version
+      description: git tag / commit, or skill version from SKILL.md frontmatter
+      placeholder: v0.2.5 / skill version 2026.8.2
+  - type: textarea
+    id: more
+    attributes:
+      label: Additional context

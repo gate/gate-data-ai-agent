@@ -1,0 +1,10 @@
+{
+  "GateData": {
+    "command": "__GATEDATA_BIN__",
+    "args": ["mcp-bridge"],
+    "env": {
+      "GATEDATA_BASE_URL": "https://api.gatedata.ai",
+      "GATEDATA_API_KEY": "__REPLACE_ME__"
+    }
+  }
+}

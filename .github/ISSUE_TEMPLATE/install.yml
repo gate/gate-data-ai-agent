@@ -1,0 +1,45 @@
+---
+name: Install / setup problem
+description: MCP installer or skills install failed
+title: "[install] "
+labels: ["install"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do **not** paste live API keys (`gd_live_*`) or full `mcp.json` contents.
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - cursor
+        - claude
+        - codex
+        - other
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What did you run?
+      description: Command or Agent prompt (mask any secrets).
+      placeholder: bash skills/gatedata-mcp-installer/scripts/install.sh --platform cursor
+    validations:
+      required: true
+  - type: textarea
+    id: expect
+    attributes:
+      label: Expected vs actual
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: OS
+      placeholder: macOS 15 / Ubuntu 22.04 / Windows
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant logs (redacted)
+      render: shell

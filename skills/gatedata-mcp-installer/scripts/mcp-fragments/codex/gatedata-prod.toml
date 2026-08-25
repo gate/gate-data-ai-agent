@@ -1,0 +1,4 @@
+
+[mcp_servers.GateData]
+url = "https://mcp.gatedata.ai/mcp"
+http_headers = { Accept = "application/json, text/event-stream", Authorization = "Bearer __REPLACE_ME__" }
